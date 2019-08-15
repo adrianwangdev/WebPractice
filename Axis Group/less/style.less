@@ -1,0 +1,258 @@
+@primary-color: rgb(230, 79, 99);
+@secondary-color: rgb(61, 79, 148);
+
+html, body {
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+        float: left;
+        line-height: 1.9;
+    }
+    a {
+        padding: 0 32px;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #5a5a5a;
+        transition: color 0.3s;
+        &.active,
+        &:hover {
+            color: @secondary-color;
+        }
+    }
+}
+
+.u-btn {
+    border: none;
+    padding: 8px 32px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: @primary-color;
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: rgb(241, 160, 171);
+    }
+    &.u-btn-lg {
+        padding: 10px 56px;
+        font-size: 22px;
+        font-weight: 300;
+        &:hover {
+            background-color: @secondary-color;
+        }
+    }
+}
+
+.item {
+    padding: 120px 0;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, .2);
+    z-index: 999;
+
+    #nav {
+        padding: 20px 0;
+        background-color: #fff;
+    }
+
+    .logo {
+        float: left;
+        div {
+            display: inline-block;
+            margin-right: 8px;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            background-color: @primary-color;
+            transition: background-color 0.5s;
+            &:before {
+                content: "/";
+                font-size: 15px;
+                line-height: 28px;
+                color: #fff;
+            }
+            &:hover {
+                background-color: rgb(241, 160, 171);
+                cursor: pointer;
+            }
+        }
+        a {
+            position: relative;
+            top: 8px;
+            font-size: 32px;
+            line-height: 0;
+            color: #999;
+            text-decoration: none;
+            span {
+                color: @secondary-color;
+            }
+        }
+    }
+}
+
+#content {
+    p {
+        margin: 0;
+    }
+    .title {
+        margin: 0;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    .info {
+        img {
+            position: absolute;
+            height: 100%;
+        }
+        p {
+            margin-bottom: 72px;
+        }
+        .title {
+            margin-bottom: 32px;
+        }
+    }
+    .slider {
+        background-image: url(../img/cb2gn-vyqxv.jpg);
+        padding: 240px 0;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+    .main {
+        .title, .subtitle {
+            margin: 0;
+            text-transform: capitalize;
+            color: #f4f4f4;
+        }
+        .title {
+            font-size: 88px;
+            font-weight: 700;
+            letter-spacing: 4px;
+        }
+        .subtitle {
+            margin-top: 12px;
+            margin-bottom: 24px;
+            font-size: 32px;
+            letter-spacing: 2px;
+        }
+    }
+    .our-services {
+        img {
+            width: auto;
+            left: 15px;
+        }
+    }
+    .our-team {
+        background-color: rgb(228, 231, 246);
+        img {
+            width: auto;
+            right: 15px;
+        }
+    }
+    .our-clients,
+    .latest-articles {
+        .title {
+            margin-bottom: 56px;
+        }
+    }
+    .our-clients {
+        .u-btn {
+            margin-top: 56px;
+        }
+    }
+    .latest-articles {
+        background-color: rgb(241, 243, 251);
+        .photo {
+            border: 1px solid #fff;
+        }
+        .detail {
+            padding: 32px;
+            padding-bottom: 4px;
+            background-color: #fff;
+            p {
+                display: inline-block;
+                margin-top: 16px;
+            }
+            a {
+                color: #5a5a5a;
+                text-decoration: none;
+                transition: color 0.3s;
+                &:hover {
+                    color: @secondary-color;
+                }
+            }
+            .title {
+                font-size: 20px;
+                font-weight: 300;
+                letter-spacing: 1px;
+                text-transform: none;
+                
+            }
+            .comment {
+                border-top: 1px solid #ddd;
+                i, a, p {
+                    color: #999;
+                }
+                a {
+                    padding: 0 16px;
+                }
+                .like {
+                    float: right;
+                    line-height: 56px;
+                    color: @primary-color;
+                }
+            }
+        }
+    }
+    .contact-us {
+        .title {
+            letter-spacing: 1px;
+            text-transform: none;
+        }
+        .u-btn {
+            margin-top: 6px;
+            float: right;
+        }
+    }
+}
+
+#footer {
+    border-top: 1px solid #999;
+    padding: 36px 0;
+    background-color: rgb(236, 236, 236);
+    ul {
+        float: none;
+        text-align: center;
+        a {
+            padding: 0 16px;
+            line-height: 1;
+            font-size: 24px;
+            color: #222;
+        }
+    }
+    p {
+        margin: 0;
+        font-size: 14px;
+        color: #5a5a5a;
+    }
+    .footer-right {
+        float: right;
+    }
+}
