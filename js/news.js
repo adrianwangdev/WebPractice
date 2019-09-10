@@ -10,5 +10,12 @@ $(document).ready(function(){
     $('.menu__btn-close').click(function(){
         $('.menu').slideUp();
     });
-    
+
+    $('.go-top').find('.go-top__btn--go-top').click(function(e){
+        e.preventDefault();
+        let target = $(e.currentTarget).attr('href');
+        let offset = $(target).offset();
+        $('html, body').animate({scrollTop: offset.top});
+    });
+
 });

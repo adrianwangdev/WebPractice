@@ -17,6 +17,13 @@ $(document).ready(function(){
         $('.menu').slideUp();
     });
 
+    $('.go-top').find('.go-top__btn--go-top').click(function(e){
+        e.preventDefault();
+        let target = $(e.currentTarget).attr('href');
+        let offset = $(target).offset();
+        $('html, body').animate({scrollTop: offset.top});
+    });
+
     if ($(window).width() < 510){
         recommendImgSize('auto', '100%');
     } else {
