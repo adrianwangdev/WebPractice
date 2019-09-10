@@ -1,0 +1,110 @@
+/* News-Page */
+/* ------------------------------------ */
+body.News-Page
+    .card__news__colorBox
+        text-align: center
+        letter-spacing: normal
+        &:hover
+            opacity: 1
+        @media screen and ( min-width: $break-md )
+            margin: 24px 0
+            h2
+                padding-top: 88px
+                padding-bottom: 112px
+                font-size: 88px
+            span
+                margin: 24px 0
+                font-size: 18px
+        @media screen and ( min-width: $break-lg )
+            h2
+                padding-top: 120px
+                padding-bottom: 152px
+                font-size: 96px
+            span
+                margin: 32px 0
+                font-size: 20px
+
+
+
+/* news-item */
+/* ------------------------------------ */
+.news-item
+    padding: 0 32px
+    letter-spacing: 1px
+    padding-bottom: 56px
+    @media screen and ( min-width: $break-md )
+        padding-bottom: 120px
+
+.news-item__block
+    padding: 0 16px
+    &.block-inner
+        padding: 16px
+    @media screen and ( min-width: $break-md )
+        padding: 0
+        &.block-inner
+            padding: 0
+
+.news-item__block__date
+    padding-bottom: 8px
+    text-align: right
+    +font (18px, 400)
+    letter-spacing: 4px
+    color: $color-light-grey
+    @media screen and ( min-width: $break-sm )
+        font-size: 22px
+    @media screen and ( min-width: $break-md )
+        float: right
+        display: inline-block
+        font-size: 24px
+        padding-bottom: 0
+
+.news-item__block__title
+    +font(14px, 600)
+    padding: 12px 0
+    font-weight: 600
+    @media screen and ( min-width: $break-md )
+        display: inline-block
+        padding: 0
+        font-size: 16px
+        vertical-align: bottom
+
+.news-item__block__inner
+    +font(14px, 600, 2)
+    @media screen and ( min-width: $break-md )
+        font-size: 16px
+
+
+
+/* pages */
+/* ------------------------------------ */
+.pages
+    text-align: center
+
+.pages-list
+    display: inline-block
+    padding-top: 16px
+    padding-bottom: 48px
+    li
+        float: left
+        padding: 0 8px
+        @media screen and ( min-width: $break-sm )
+            padding: 0 16px
+    a
+        font-weight: 600
+        transition: all .3s
+        &:link, &:visited, &:active
+            color: $color-primary
+        &:hover
+            color: $color-light-grey
+
+.btn-text--next
+    &:after
+        content: '\e803'
+        padding-left: 8px
+        font-family: 'fontello'
+
+.page
+    &.page-lg
+        display: none
+        @media screen and ( min-width: $break-md )
+            display: list-item

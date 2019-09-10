@@ -1,0 +1,18 @@
+.go-top
+    height: 36px
+    background-color: $color-goTop-bg
+    @media screen and ( min-width: $break-md )
+        display: none
+
+.go-top__btn--go-top
+    display: inline-block
+    width: 136px
+    height: 36px
+    background-color: $color-goTop-grey
+    transition: all .3s
+    &:hover
+        opacity: .5
+    i
+        +center
+        font-size: 28px
+        color: $color-white

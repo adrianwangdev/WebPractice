@@ -1,0 +1,109 @@
+.slide
+    color: $color-primary
+
+.slide-bg
+    position: fixed
+    background-color: $color-slide-bg
+    max-height: 96vh
+    img
+        width: auto
+        height: auto
+        max-width: 100%
+        max-height: 100%
+        z-index: -1
+
+.slide-info
+    top: 64px
+    padding-left: 15px
+    font-style: italic
+    letter-spacing: 1px
+    @media screen and ( min-width: $break-sm )
+        top: 104px
+    @media screen and ( min-width: $break-md )
+        top: 240px
+    @media screen and ( min-width: $break-lg )
+        top: 320px
+
+.slide-info__title
+    display: none
+    margin-bottom: 32px
+    +font(14px, 600)
+    @media screen and ( min-width: $break-sm )
+        display: block
+    @media screen and ( min-width: $break-md )
+        font-size: 18px
+    @media screen and ( min-width: $break-lg )
+        font-size: 24px
+
+.slide-info__inner
+    +font(14px, 600)
+    letter-spacing: 1px
+    @media screen and ( min-width: $break-sm )
+        font-size: 18px
+    @media screen and ( min-width: $break-lg )
+        font-size: 24px
+
+.slide-info__inner__date
+    display: inline-block
+    border-bottom: 2px solid $color-primary
+    margin-bottom: 8px
+    padding-bottom: 2px
+
+
+
+.slide-bg__btn-recruit
+    position: absolute
+    right: 16px
+    top: -128px
+    +size (72px, 72px)
+    border-radius: 50%
+    padding: 20px 0
+    text-align: center
+    background-color: $color-recruit
+    cursor: pointer
+    transition: all .4s
+    &:hover
+        background-color: $color-recruit-hover
+    p
+        color: $color-white
+        +font(14px, 400, 1.4)
+        letter-spacing: 1px
+        &:hover
+            color: $color-white
+        i
+            font-size: 14px
+    @media screen and ( min-width: $break-sm )
+        top: -182px
+        +size (104px, 104px)
+        padding: 32px 12px
+        p
+            +font(18px, 400, 1.4)
+
+.slide-bg__btn-topics
+    position: absolute
+    right: 16px
+    top: -36px
+    +size (72px, 72px)
+    border-radius: 50%
+    text-align: center
+    padding: 16px 0
+    background-color: rgb(256, 256, 256)
+    cursor: pointer
+    transition: all .4s
+    &:hover
+        transform: translateY(-6px)
+    p
+        color: $color-primary
+        +font(12px, 400, 1.5)
+        letter-spacing: 1px
+        &:hover
+            color: $color-primary
+    i
+        font-size: 14px
+            
+    @media screen and ( min-width: $break-sm )
+        top: -52px
+        +size (104px, 104px)
+        padding: 32px 12px
+        p
+            +font(18px, 400, 1.4)

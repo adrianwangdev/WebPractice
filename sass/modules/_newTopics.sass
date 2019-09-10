@@ -1,0 +1,46 @@
+.card__news__colorBox
+    width: 100%
+    color: $color-white
+    background-color: $color-light-grey
+    transition: all .6s
+    &:hover
+        opacity: .7
+    h2
+        padding-top: 48px
+        padding-bottom: 56px
+        font-family: $colorBox-font
+        font-size: 64px
+        font-weight: 300
+    span
+        display: inline-block
+        margin: 24px 0
+        text-transform: uppercase
+    &.colorBox-blue
+        background-color: $color-blue
+    &.colorBox-brown
+        background-color: $color-brown
+    &.colorBox-green
+        background-color: $color-green
+    @media screen and ( min-width: $break-md )
+        padding: 0 48px
+        h2
+            padding-top: 8px
+            padding-bottom: 16px
+            font-size: 40px
+        span
+            margin: 12px 0
+            font-size: 12px
+
+.card__info
+    padding-top: 24px
+    padding-bottom: 32px
+    letter-spacing: 1px
+
+.card__info__title
+    +font(14px, bold)
+    color: $color-primary
+    margin-bottom: 16px
+
+.card__info__subtitle
+    font-weight: 600
+    color: $color-light-grey

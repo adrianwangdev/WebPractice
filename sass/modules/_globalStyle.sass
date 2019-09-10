@@ -1,0 +1,119 @@
+html, body
+    font-family: $default-font
+
+*
+    position: relative
+
+.wrapper
+    width: 100%
+    height: 100%
+
+.container
+    padding: 0
+    @media screen and ( min-width: $break-md )
+        padding-right: 15px
+        padding-left: 15px
+
+.text-item
+    padding: 0 32px
+
+ul, li, h1, h2, h3, h4, h5, h6, p, a, hr
+    margin: 0
+    padding: 0
+
+ul
+    list-style: none
+
+a
+    &:link, &:visited, &:hover, &:active
+        text-decoration: none
+
+img
+    width: 100%
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+.u-mb-32
+    margin-bottom: 32px
+
+.u-white-48
+    widows: 100%
+    height: 48px
+    background-color: #fff
+
+.new-topics, .works, .recommend, .go-top, #footer
+    text-align: center
+    background-color: #fff
+
+.category
+    display: block
+    width: 100%
+    background-color: #fff
+    h2
+        display: inline-block
+        margin: 32px 0
+        +font(16px, 600, 1.8)
+        letter-spacing: 2px
+        border-bottom: 2px solid $color-primary
+        @media screen and ( min-width: $break-sm )
+            margin: 24px 0
+    &.category-page
+        margin-top: 48px
+        margin-bottom: 16px
+        text-align: center
+        h2
+            margin: 24px 0
+        @media screen and ( min-width: $break-md )
+            margin-top: 16px
+            margin-bottom: 24px
+            h2
+                font-size: 18px
+        @media screen and ( min-width: $break-lg )
+            margin-top: 32px
+            margin-bottom: 40px
+
+.btn--all-view
+    display: block
+    border: 2px solid $color-primary
+    margin: 0 16px
+    padding: 16px 0
+    +font(14px, 600)
+    text-transform: uppercase
+    letter-spacing: 1px
+    color: $color-primary
+    background-color: #fff
+    transition: all .3s
+    &:hover
+        color: $color-white
+        background-color: $color-primary
+    @media screen and ( min-width: $break-sm )
+        margin: 0
+        margin-right: auto
+        margin-left: auto
+        max-width: 750px
+    @media screen and ( min-width: $break-md )
+        max-width: 942px
+    @media screen and ( min-width: $break-lg )
+        max-width: 1142px
+
+.new-topics, .works
+    .container
+        margin-right: auto
+        margin-left: auto
+        @media screen and ( min-width: $break-md )
+            display: flex
+        .card__news
+            transition: all .6s
+            @media screen and ( min-width: $break-md )
+                flex: 1
+                margin: 0 16px
+                &.card__news-1
+                    margin-left: 0
+                &.card__news-3
+                    margin-right: 0
+
+body.Page
+    #content
+        @media screen and ( min-width: $break-md )
+            padding-top: 176px

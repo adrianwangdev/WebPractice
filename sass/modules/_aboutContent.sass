@@ -1,0 +1,135 @@
+/* About-Page */
+/* ------------------------------------ */
+body.About-Page
+    .colorBox-black
+        .more
+            color: $color-white
+
+span
+    display: block
+    +font (14px, 600, 1.8)
+    letter-spacing: 1px
+    color: $color-primary
+
+.contents-of-business,
+.company-profile,
+.media,
+.award
+    .category
+        margin-top: 16px
+        @media screen and ( min-width: $break-md )
+            margin-top: 40px
+
+
+
+/* about us */
+/* ------------------------------------ */
+.about-us__spirit-img
+    margin: 0 auto
+    margin-bottom: 32px
+    width: 200px
+    height: auto
+    @media screen and ( min-width: $break-md )
+        width: 360px
+        margin-bottom: 48px
+        
+
+.about-us__inner
+    span
+        margin-bottom: 16px
+        &:last-child
+            margin-bottom: 40px
+    @media screen and ( min-width: $break-md )
+        text-align: center
+        padding: 0 80px
+        span
+            margin-bottom: 24px
+            &:last-child
+                margin-bottom: 64px
+
+
+
+/* contents of business */
+/* ------------------------------------ */
+.contents-of-business
+    background-color: $color-light-grey-bg
+    padding-bottom: 32px
+    .category
+        background-color: $color-light-grey-bg
+
+.business-box
+    text-align: center
+
+.business-box__title
+    margin-bottom: 8px
+
+.business-box__info
+    margin-bottom: 32px
+    font-size: 12px
+
+
+
+/* company profile */
+/* ------------------------------------ */
+.company-profile
+    .colorBox-black
+        .icon-location
+            font-size: 22px
+        .more
+            color: $color-white
+        @media screen and ( min-width: $break-md )
+            float: left
+            
+    .recommend__card__inner
+        text-align: center
+        .title
+            padding: 16px 0
+            +font (14px, 600)
+            text-transform: uppercase
+            letter-spacing: 2px
+        .more
+            padding-top: 0
+
+.company-form--group
+    margin-bottom: 8px
+
+.company-form
+    .col-xs-12
+        &:last-child
+            margin-bottom: 32px
+    > .company-form--group    // 主要取引会社
+        margin-bottom: 0
+        .company-form--group__title
+            margin-bottom: 8px
+            text-align: center
+            @media screen and ( min-width: $break-md )
+                text-align: left
+        .company-form--group__content
+            margin-bottom: 40px
+            span
+                margin-bottom: 8px
+            @media screen and ( min-width: $break-md )
+                margin-bottom: 64px
+                
+
+
+
+/* award */
+/* ------------------------------------ */
+.award
+    margin-bottom: 40px
+    @media screen and ( min-width: $break-md )
+        margin-bottom: 64px
+        
+
+// ------------------------------------------- //
+// ------------------------------------------- //
+// ------------------------------------------- //
+// ------------------------------------------- //
+// ------------------------------------------- //
+// 從 globalStyle 改 recommed 在小螢幕上的跑版問題 //
+// ------------------------------------------- //
+// ------------------------------------------- //
+// ------------------------------------------- //
+// ------------------------------------------- //
+// ------------------------------------------- //

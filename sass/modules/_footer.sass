@@ -1,0 +1,36 @@
+#footer
+    text-align: left
+    padding: 16px 30px 24px 30px
+    a
+        color: $color-primary
+        transition: all .6s
+        &:hover
+            opacity: .6
+    @media screen and ( min-width: $break-md )
+        padding-left: 0
+        padding-right: 0
+        
+        
+.footer__logo
+    display: inline-block
+    padding-top: 8px
+    padding-bottom: 24px
+    font-family: $colorBox-font
+    +font (48px, 300)
+    color: $color-primary
+
+.footer__list-left,
+.footer__list-right,
+    margin-bottom: 24px
+    li
+        +font (14px, 600, 2)
+
+.footer__company-info
+    li
+        +font (14px, 600, 1.6)
+
+.event
+    color: $color-light-grey
+
+.copyright
+    font-size: 14px

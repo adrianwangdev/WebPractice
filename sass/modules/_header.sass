@@ -1,0 +1,196 @@
+#header
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    @media screen and ( min-width: $break-md )
+        z-index: 1
+
+.breadcrumb
+    padding: 32px 16px 10px 0
+    background-color: #fff
+    display: none
+    @media screen and ( min-width: $break-md )
+        display: block
+
+.breadcrumb__breadcrumb-list
+    float: right
+    background-color: #fff
+    li
+        float: left
+        padding: 0 12px
+        &:nth-child(4),
+        &:nth-child(5),
+        &:nth-child(6),
+            padding: 0 8px
+
+.breadcrumb__breadcrumb-list__item
+    &:link, &:visited, &:active
+        +font (14px, 600)
+        color: $color-grey
+        transition: all .3s
+        &:after
+            content: '\e803'
+            font-family: 'fontello'
+            font-size: 15px
+            padding-left: 8px
+        &:hover
+            color: $color-primary
+
+.breadcrumb__breadcrumb-list__icon
+    &:link, &:visited, &:active
+        font-size: 18px
+        line-height: 1.2
+        color: $color-light-grey
+        transition: all .3s
+        &:hover
+            opacity: .6
+
+.logo
+    display: block
+    padding: 16px
+    img
+        width: 224px
+    @media screen and ( min-width: $break-md )
+        padding-top: 16px
+        padding-bottom: 16px
+        text-align: center
+        background-color: #fff
+        img
+            width: 360px
+    @media screen and ( min-width: $break-lg )
+        padding: 24px 16px 32px 16px
+        
+
+.menu-toggle
+    position: absolute
+    top: 18px
+    right: 16px
+    cursor: pointer
+    z-index: 1
+    &:hover
+        span
+            &:first-child
+                transform: translateX(-4px)
+            &:last-child
+                transform: translateX(4px)
+    span
+        display: block
+        margin-bottom: 6px
+        width: 28px
+        height: 2px
+        background-color: $color-primary
+        transition: all .3s
+        &:last-child
+            margin-bottom: 0
+    @media screen and ( min-width: $break-md )
+        display: none
+
+.menu
+    display: none
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(256, 256, 256, .9)
+    z-index: 1
+
+.menu__btn-close
+    position: absolute
+    top: 18px
+    right: 10px
+    height: 24px
+    cursor: pointer
+    z-index: 2
+    transform: scale(.9)
+    &:hover
+        animation: btn-close--breath 1s ease-in infinite
+    span
+        display: block
+        width: 28px
+        height: 2px
+        background-color: $color-primary
+        &:first-child
+            transform: rotate(45deg) translateX(2px) translateY(9px)
+        &:last-child
+            transform: rotate(-45deg) translateX(-8px)
+@keyframes btn-close--breath
+    0%
+        transform: scale(.9)
+    50%
+        transform: scale(1)
+    100%
+        transform: scale(.9)
+
+.menu__menu-list
+    margin-top: 28px
+    li
+        text-align: center
+    a
+        display: block
+        padding: 12px 0
+        +font(15px, 600)
+        text-transform: uppercase
+        letter-spacing: 1px
+        color: $color-primary
+        transition: all .3s
+        &:hover
+            opacity: .6
+    .meni__menu-list__icon-fb,
+    .meni__menu-list__icon-location
+        display: inline-block
+        margin-left: 4px
+        margin-right: 4px
+        padding: 16px 4px 0 4px
+        font-size: 20px
+        color: $color-light-grey
+
+.menu-lgScreen
+    display: none
+    text-align: center
+    padding: 10px
+    padding-bottom: 24px
+    background-color: #fff
+    @media screen and ( min-width: $break-md )
+        display: block
+
+.menu-lgScreen__menu-list
+    display: inline-block
+    li
+        float: left
+        padding: 0 20px
+        &:first-child
+            padding-left: 0
+        &:last-child
+            padding-right: 0
+        a
+            +font (14px, 600)
+            text-transform: uppercase
+            color: $color-primary
+            &.active:after,
+            &:hover:after
+                content: ""
+                position: absolute
+                left: 0
+                bottom: -8px
+                display: block
+                width: 100%
+                height: 2px
+                background-color: $color-primary
+            &:hover:after
+                animation: list-item--line .2s linear
+            &.active:hover:after
+                animation: none
+        @media screen and ( min-width: $break-lg )
+            padding: 0 32px
+            &:first-child
+                padding-left: 0
+            &:last-child
+                padding-right: 0
+
+@keyframes list-item--line
+    0%
+        width: 0%
+    100%
+        width: 100%

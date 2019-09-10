@@ -1,0 +1,142 @@
+/* Contact-Page */
+/* ------------------------------------ */
+body.Contact-Page
+    .colorBox-black
+        .icon-location
+            font-size: 22px
+        .more
+            color: $color-white
+    .recommend__card__inner
+        text-align: center
+        .title
+            padding: 16px 0
+            +font (14px, 600)
+            text-transform: uppercase
+            letter-spacing: 2px
+        .more
+            padding-top: 0
+    
+span, label, .privacy-policy--box__title
+    display: block
+    +font (14px, 600, 1.8)
+    letter-spacing: 1px
+    color: $color-primary
+
+span
+    transition: all .3s
+
+span.point
+    display: inline-block
+    padding: 0 8px
+    color: $color-point
+
+.contact-form,
+.privacy-policy
+    .category
+        margin-top: 16px
+        @media screen and ( min-width: $break-md )
+            margin-top: 40px
+
+.contact__inner
+    margin-bottom: 40px
+    @media screen and ( min-width: $break-xs )
+        text-align: center
+    @media screen and ( min-width: $break-lg )
+        margin-bottom: 64px
+
+.contact__inner__phone
+    padding-top: 16px
+    text-align: center
+    span
+        +font (18px, 400, 1.8)
+        letter-spacing: 2px
+        @media screen and ( min-width: $break-xs )
+            display: inline-block
+
+.contact-form
+    padding-bottom: 40px
+    background-color: $color-contact-blue-bg
+    .category
+        background-color: $color-contact-blue-bg
+    @media screen and ( min-width: $break-lg )
+        padding-bottom: 64px
+
+.contact-form--info
+    .must
+        margin-bottom: 24px
+    .point
+        padding-left: 0
+    @media screen and ( min-width: $break-xs )
+        text-align: center
+        .must
+            margin: 24px
+            @media screen and ( min-width: $break-sm )
+                margin-top: 8px
+    @media screen and ( min-width: $break-sm )
+        margin-bottom: 32px
+
+.contact-form--form
+    margin-bottom: 16px
+    &:last-child
+        margin-bottom: 0
+    label
+        margin-bottom: 4px
+    @media screen and ( min-width: $break-lg )
+        margin-bottom: 24px
+
+input, textarea
+    border: none
+    padding: 8px 10px
+    width: 100%
+    +font (14px, 600)
+    letter-spacing: 1px
+    color: $color-primary
+    &:focus
+        outline: none
+
+textarea
+    padding-top: 12px
+    padding-bottom: 12px
+    height: 24vh
+    resize : none
+
+.group
+    display: flex
+    span
+        display: inline-block
+        padding: 0 8px
+
+span.postcode
+    padding-left: 0
+
+.address-group
+    .postcode
+        padding-top: 4px
+    > input
+        margin-bottom: 8px
+
+.btn--send
+    border: 2px solid $color-primary
+    padding: 8px 0
+    width: 100%
+    text-transform: uppercase
+    background-color: inherit
+    transition: all .3s
+    &:hover
+        background-color: $color-primary
+        span
+            color: $color-white
+
+.privacy-policy--box
+    margin-bottom: 16px
+    &.company--info
+        @media screen and ( min-width: $break-xs )
+            padding-top: 24px
+            padding-bottom: 32px
+            text-align: center
+            span
+                font-weight: 400
+
+.privacy-policy--box__title
+    @media screen and ( min-width: $break-xs )
+        padding: 8px 0
