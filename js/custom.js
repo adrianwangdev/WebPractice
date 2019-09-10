@@ -13,8 +13,10 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: offset.top});
     };
 
-    let slideBg = $('.slide').find('.slide-bg').css('height');
-    $('.slide').css('height', slideBg);
+    $('.slide').find('img').ready(function(){
+        let slideBg = $('.slide').find('.slide-bg').css('height');
+        $('.slide').css('height', slideBg);
+    })
 
     let windowH = $(window).height();
     $('.menu').css('height', windowH);
